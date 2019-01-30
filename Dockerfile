@@ -1,4 +1,8 @@
 
+# git config credential.helper 'cache --timeout=3600'
+# git pull https://gannpm:Welcome1@mygithost.com/gannpm/docker-react
+# git pull https://gannpm:Welcome1@localhost.com/gannpm/docker-react
+
 FROM node:alpine AS builder
 
 WORKDIR './app'
