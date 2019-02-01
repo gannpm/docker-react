@@ -11,6 +11,8 @@ class App extends Component {
           <p>
             Changed the text again
             <br/>
+            docker-react test - 2019-02-01
+            <br/>
             <br/>
             Edit <code>src/App.js</code> and save to reload.
           </p>
