@@ -1,5 +1,6 @@
 
 # git config credential.helper 'cache --timeout=3600'
+# https://gannpm@yahoo.com@github.com
 # git pull https://gannpm:Welcome1@mygithost.com/gannpm/docker-react
 # git pull https://gannpm:Welcome1@localhost.com/gannpm/docker-react
 

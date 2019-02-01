@@ -10,6 +10,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             I was changed on the Feature branch.
+            Changed again on 2019-02-01.
             <br/>
             <br/>
             Edit <code>src/App.js</code> and save to reload.
