@@ -14,7 +14,7 @@ deploy:
   region: "us-west-2"
   app: "docker"
   env: "Docker-env"
-  bucker_name: "/elasticbeanstalk-us-west-2-270403973640"
+  bucket_name: "elasticbeanstalk-us-west-2-270403973640"
   bucket_path: "docker"
   on:
     branch: master
@@ -23,5 +23,12 @@ deploy:
   
 
 
+#  Docker-env.x2qmrpiey9.us-west-2.elasticbeanstalk.com
+#S3 container
+# elasticbeanstalk-us-west-2-270403973640
 
-Docker-env.w2zt86gv5t.us-west-2.elasticbeanstalk.com
+#IAM - AWS Id and Pwd stored in .travis-ci.org
+# $AWS_ACCESS_KEY
+# $AWS_SECRET_KEY
+
+# https://s3.console.aws.amazon.com/s3/buckets/elasticbeanstalk-us-west-2-270403973640/?region=us-west-2&tab=overview
