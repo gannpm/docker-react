@@ -28,6 +28,8 @@ deploy:
 #S3 container
 # elasticbeanstalk-us-west-2-270403973640
 
+# git@github.com:some-user/some-repo
+
 #IAM - AWS Id and Pwd stored in .travis-ci.org
 # $AWS_ACCESS_KEY
 # $AWS_SECRET_KEY
