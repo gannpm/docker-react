@@ -9,7 +9,8 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Changed the text again but no upload to git
+            Changed the text again but no upload to git.
+            And again ...
             <br/>
             <br/>
             Edit <code>src/App.js</code> and save to reload.
