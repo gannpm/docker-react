@@ -1,5 +1,5 @@
 
-sudo: reuired
+sudo: required
 service:
   - docker
 
@@ -14,7 +14,7 @@ deploy:
   region: "us-west-2"
   app: "docker"
   env: "Docker-env"
-  bucker_name: "/elasticbeanstalk-us-west-2-270403973640"
+  bucket_name: "/elasticbeanstalk-us-west-2-270403973640"
   bucket_path: "docker"
   on:
     branch: master
