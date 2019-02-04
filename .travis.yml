@@ -13,10 +13,12 @@
     }, 
     "region": "us-west-2", 
     "bucket_path": "docker", 
-    "secret_access_key": {
+    "secret_access_key": { 
       "secure": "$AWS_SECRET_KEY"
     }, 
-    "access_key_id": {"secure": "$AWS_ACCESS_KEY"}, 
+    "access_key_id": {
+      "secure": "$AWS_ACCESS_KEY"
+    }, 
     "bucket_name": "elasticbeanstalk-us-west-2-270403973640", 
     "env": "Docker-env", 
     "provider": "elasticbeanstalk", 
