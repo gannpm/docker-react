@@ -16,11 +16,11 @@
     "secret_access_key": {
       "secure": "$AWS_SECRET_KEY"
     }, 
+    "access_key_id": {"secure": "$AWS_ACCESS_KEY"}, 
     "bucket_name": "elasticbeanstalk-us-west-2-270403973640", 
     "env": "Docker-env", 
     "provider": "elasticbeanstalk", 
-    "app": "docker", 
-    "access_key_id": "$AWS_ACCESS_KEY"
+    "app": "docker"
   }, 
   "script": [
     "docker run gannpm/docker-react npm run test -- --coverage"
