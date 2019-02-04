@@ -9,8 +9,8 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Changed the text again but no upload to git.
-            And again ...
+            Updated .travis.yml file. Elastic Beanstalk failed to compile with these changes.
+
             <br/>
             <br/>
             Edit <code>src/App.js</code> and save to reload.
