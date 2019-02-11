@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t gannpm/docker-react -f Dockerfile_dev .
+  - docker build gannpm/docker-react -f Dockerfile_dev .
 
 script:
   - docker run gannpm/docker-react npm run test -- --coverage
