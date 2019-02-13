@@ -9,8 +9,9 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Updated .travis.yml file. Elastic Beanstalk failed to compile with these changes.
-
+            Changed the text again
+            <br/>
+            docker-react test - 2019-02-01
             <br/>
             <br/>
             Edit <code>src/App.js</code> and save to reload.

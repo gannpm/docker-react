@@ -1,28 +1,27 @@
 
-sudo: required
-language: node_js
-services:
+sudo: reuired
+service:
   - docker
 
 before_install:
-  - docker build -t gannpm/docker-react -f Dockerfile_dev .
+  - docker build -t gannpm/docker-react -f Dockerfile.dev .
 
 script:
   - docker run gannpm/docker-react npm run test -- --coverage
 
 deploy:
-  # Docker-env.x2qmrpiey9.us-west-2.elasticbeanstalk.com 
   provider: elasticbeanstalk
   region: "us-west-2"
   app: "docker"
   env: "Docker-env"
-  bucket_name: "elasticbeanstalk-us-west-2-270403973640"
+  bucket_name: "/elasticbeanstalk-us-west-2-270403973640"
   bucket_path: "docker"
   on:
-    branch: "master"
-  # skip_cleanup: true
-  access_key_id: 
-    secure: "$AWS_ACCESS_KEY_ID"
-  secret_access_key: 
-    secure: "$AWS_SECRET_ACCESS_KEY"
+    branch: master
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET_KEY"
+  
 
+
+
+Docker-env.w2zt86gv5t.us-west-2.elasticbeanstalk.com
