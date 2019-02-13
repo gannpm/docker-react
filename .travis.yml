@@ -4,7 +4,7 @@ service:
   - docker
 
 before_install:
-  - docker build -t gannpm/docker-react -f Dockerfile.dev .
+  - docker build -t gannpm/docker-react -f Dockerfile_dev .
 
 script:
   - docker run gannpm/docker-react npm run test -- --coverage
@@ -14,13 +14,14 @@ deploy:
   region: "us-west-2"
   app: "docker"
   env: "Docker-env"
-  bucket_name: "/elasticbeanstalk-us-west-2-270403973640"
+  bucket_name: "elasticbeanstalk-us-west-2-270403973640"
   bucket_path: "docker"
   on:
     branch: master
   access_key_id: 
-    - secure: "$AWS_ACCESS_KEY"
-  secret_access_key: "$AWS_SECRET_KEY"
+    secure: "$AWS_ACCESS_KEY_ID"
+  secret_access_key: 
+    secure: "$AWS_SECRET_ACCESS_KEY"
   
 
 
