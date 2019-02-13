@@ -14,7 +14,7 @@ deploy:
   provider: s3
   region: "us-west-2"
   app: "docker"
-  env: "Docker-env"
+  env: "docker-env"
   bucket_name: "elasticbeanstalk-us-west-2-270403973640"
   bucket_path: "docker"
   on:
